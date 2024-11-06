@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookHub - Соціальна мережа для любителів книг</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js"></script>
+</head>
+<body>
+  <header>
+    <h1>BookHub</h1>
+  </header>
+
+  <section id="books">
+    <h2>Список книг</h2>
+    <div id="bookList"></div>
+    
+  </section>
+
+  <section id="addBook">
+    <h3>Додати книгу</h3>
+    <form id="addBookForm">
+      <input type="text" id="bookTitle" placeholder="Назва книги" required>
+      <input type="text" id="bookAuthor" placeholder="Автор" required>
+      <button type="submit">Додати</button>
+    </form>
+  </section>
+</body>
+</html>

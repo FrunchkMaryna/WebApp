@@ -1,0 +1,144 @@
+/* Базові стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Шапка додатку */
+header {
+  background-color: #4a90e2;
+  color: white;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+header button {
+  background-color: #fff;
+  color: #4a90e2;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+header button:hover {
+  background-color: #e0e0e0;
+}
+
+header #logoutBtn {
+  display: none;
+}
+
+/* Стилі секцій */
+section {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Секція для списку книг */
+#books h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+#bookList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#bookList div {
+  padding: 12px;
+  background-color: #f9f9fb;
+  border-radius: 6px;
+  border-left: 5px solid #4a90e2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Стилі для форми додавання книг */
+#addBook {
+  margin-top: 20px;
+}
+
+#addBook h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#addBookForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#addBookForm input[type="text"],
+#addBookForm button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+#addBookForm input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#addBookForm button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addBookForm button:hover {
+  background-color: #357ab8;
+}
+
+/* Кнопка і форма для взаємодії */
+button, input[type="text"] {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Мобільна адаптація */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  #bookList div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
